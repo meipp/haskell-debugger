@@ -143,7 +143,7 @@ jobs:
     continue-on-error: ${{ inputs.is-release == false }}
     strategy:
       matrix:
-        runner: [ubuntu-latest, macOS-latest] # windows-latest is broken, see #246
+        runner: [ubuntu-latest, macOS-latest, windows-2025] # windows-latest is broken, see #246
         version: [9.14.1] #, latest-nightly] disable nightly while its broken
         include:
           # - channel: https://ghc.gitlab.haskell.org/ghcup-metadata/ghcup-nightlies-0.0.7.yaml
